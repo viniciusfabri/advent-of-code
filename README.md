@@ -28,10 +28,14 @@ This repository serves as a skeleton for creating new Advent of Code (AoC) proje
 ## Project Structure
 
 - `main.go`: Entry point of the application.
+- `Copy 2024/template folder to 2024/day{number}`
 - `2024/day1/part1.go`: Solution for Day 1, Part 1.
 - `2024/day1/part1_test.go`: Tests for Day 1, Part 1.
 - `2024/day1/input.txt`: Input data for Day 1.
-- `2024/day1/sample.txt`: Sample input data for Day 1.
+
+## Testing
+
+It is advised to add the sample input and output provided by Advent of Code to a test case for each day and part as a minimal.
 
 ## Contributing
 
