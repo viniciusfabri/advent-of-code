@@ -1,12 +1,13 @@
 package main
 
 import (
+	"fmt"
 	"sort"
 	"strconv"
 	"strings"
 )
 
-func Part1(input string) int {
+func Part1(input string) string {
 	lines := strings.Split(strings.TrimSpace(input), "\n")
 
 	var arrayA, arrayB []int
@@ -32,7 +33,7 @@ func Part1(input string) int {
 		totalDifference += abs(arrayA[i] - arrayB[i])
 	}
 
-	return totalDifference
+	return fmt.Sprint(totalDifference)
 }
 
 func abs(x int) int {

@@ -6,23 +6,23 @@ import (
 	"testing"
 )
 
-func TestPart2WithSampleInput(t *testing.T) {
+func TestPart1(t *testing.T) {
 	b, err := os.ReadFile("sample_input.txt")
 	if err != nil {
 		fmt.Print(err)
 		t.Errorf("Error reading sample_input.txt file")
 	}
 
-	str := string(b)
+	input := string(b)
 
-	expected := "31"
-	result := Part2(str)
+	expected := "2"
+	result := Part1(input)
 	if result != expected {
 		t.Errorf("Expected %s, got %s", expected, result)
 	}
 }
 
-func TestPart2WithRealInput(t *testing.T) {
+func TestPart1WithRealInput(t *testing.T) {
 	b, err := os.ReadFile("input.txt")
 	if err != nil {
 		fmt.Print(err)
@@ -31,8 +31,8 @@ func TestPart2WithRealInput(t *testing.T) {
 
 	str := string(b)
 
-	expected := "21024792"
-	result := Part2(str)
+	expected := "252"
+	result := Part1(str)
 	if result != expected {
 		t.Errorf("Expected %s, got %s", expected, result)
 	}

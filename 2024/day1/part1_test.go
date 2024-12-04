@@ -15,10 +15,10 @@ func TestPart1WithSampleInput(t *testing.T) {
 
 	str := string(b)
 
-	expected := 11
+	expected := "11"
 	result := Part1(str)
 	if result != expected {
-		t.Errorf("Expected %d, got %d", expected, result)
+		t.Errorf("Expected %s, got %s", expected, result)
 	}
 }
 
@@ -31,9 +31,9 @@ func TestPart1WithRealInput(t *testing.T) {
 
 	str := string(b)
 
-	expected := 1879048
+	expected := "1879048"
 	result := Part1(str)
 	if result != expected {
-		t.Errorf("Expected %d, got %d", expected, result)
+		t.Errorf("Expected %s, got %s", expected, result)
 	}
 }

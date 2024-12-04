@@ -1,11 +1,12 @@
 package main
 
 import (
+	"fmt"
 	"strconv"
 	"strings"
 )
 
-func Part2(input string) int {
+func Part2(input string) string {
 	lines := strings.Split(strings.TrimSpace(input), "\n")
 
 	var arrayA, arrayB []int
@@ -29,7 +30,7 @@ func Part2(input string) int {
 		similarityScore += locationId * occurrances
 	}
 
-	return similarityScore
+	return fmt.Sprint(similarityScore)
 }
 
 func countOccurrences(array []int, target int) int {
